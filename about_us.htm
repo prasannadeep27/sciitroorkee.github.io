@@ -1,0 +1,151 @@
+<html>
+<head>
+	<link rel="stylesheet" href="about_us.css">
+	<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+	$(document).ready(function(){
+
+		$(".one , .two, .three").animate({
+			width:'33.33%'
+		},800);
+
+		setTimeout(function(){
+			$(".name").animate({
+				opacity:'1.0'
+			},800);
+		},800);
+
+		$(".one").click(function(){
+			$(".name").animate({
+				opacity:'0.0'
+			},200);
+
+			$(".one:hover").animate({
+				opacity:'1.0'
+			},400);
+
+			$(".two, .three").animate({
+				width:'0%'
+			},800);
+
+			$(".head").hide();
+
+			setTimeout(function(){
+
+			$(".fa").show().animate({
+				opacity:'1.0'
+			}, 500 );
+
+		},600);
+
+		});
+
+		$(".two").click(function(){
+			$(".name").animate({
+				opacity:'0.0'
+			},200);
+
+			$(".two:hover").animate({
+				opacity:'1.0'
+			},400);
+
+			$(".one, .three").animate({
+				width:'0%'
+			},800);
+
+			$(".head").hide();
+
+			setTimeout(function(){
+				$(".two").animate({
+					'margin-left':'0%'
+				},800);
+			},800);
+
+			setTimeout(function(){
+
+			$(".fa").show().animate({
+				opacity:'1.0'
+			},500);
+
+		},600);
+		});
+
+		$(".three").click(function(){
+			$(".name").animate({
+				opacity:'0.0'
+			},200);
+
+			$(".three:hover").animate({
+				opacity:'1.0'
+			},400);
+
+			$(".one, .two").animate({
+				width:'0%'
+			},800);
+
+			$(".head").hide();
+
+			setTimeout(function(){
+				$(".three").animate({
+					'margin-left':'0%'
+				},1200);
+				$(".fa").show().animate({
+				opacity:'1.0'
+				}, 500 );
+
+		},600);
+		});
+	});
+
+
+	/*$(document).ready(function(){
+				$(".fa").click(function(){
+					$(".fa").hide();
+					$(".one, .two, .three").animate({
+						width:'33.33%'
+					},800);
+					$(".one:hover, .two:hover, .three:hover").animate({
+						opacity:'0.7'
+					},400);
+				});
+			});*/
+</script>
+
+</head>
+<body>
+	<div class="header">
+	<a href="landingnew.htm"><img src="sclogo.png" class="logo"></img></a>
+	<ul class="head">
+		<li> <a href="landingnew.htm">Home </a></li>
+		<li> <a href="games.htm">Games </a> </li>
+		<li> <a href="events.htm">Events </a></li>
+		<li> <a href="about_us.htm" style="font-weight:normal; opacity:0.90;">About Us </a></li>
+		<li> <a href="notices.htm">Notices </a></li>
+		<li> <a href="team.htm">Team </a></li>
+	</ul>
+	</div>
+	<a href="about_us.htm"><i class="fa fa-times" style="font-size:24px"></i></a>
+<div class="body">
+	<div class="one"><!--<img class="image" src="a.jpg">--><p class="name">Hobies Club</p></div>
+	<div class="two"><!--<img class="image" src="b.jpg">--> <p class="name">Alaknanda Unit</p></div>
+	<div class="three"><!--<img class="image" src="c.jpg">--><p class="name">Jawahar Bhawan</p></div>
+	<!--<p class="text"> ABOUT <br> US </p>-->
+</div>
+<p class="heading" id="1a">Hobies Club</p>
+<p class="text" id="1b">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et soe ecta lones fir tastingh polore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p class="heading" id="2a">Alaknanda Unit</p>
+<p class="text" id="2b">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et soe ecta lones fir tastingh polore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p class="heading" id="3a">Jawahar Bhawan</p>
+<p class="text" id="3b">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et soe ecta lones fir tastingh polore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+</body>
+</html>

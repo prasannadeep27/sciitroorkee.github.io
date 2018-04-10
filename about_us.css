@@ -1,0 +1,72 @@
+@media (min-width: 300px) {
+  html{
+    font-size : 6px;
+  }
+}
+
+@media (min-width: 800px) {
+  html{
+    font-size : 9px;
+  }
+}
+@media (min-width: 1300px) {
+  html{
+    font-size : 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html{
+    font-size : 15px;
+  }
+}
+
+@media (min-width: 1850px) {
+  html{
+    font-size : 18px;
+  }
+}
+
+
+body {padding:0; margin:0}
+
+.logo {position: fixed; z-index: 50; top:2rem; left:12rem; width:10rem;}
+
+.head {position: fixed; z-index: 55; top:3.5rem; right:11rem; font-family: brandon grotesque; font-size: 1.3rem;}
+
+ul {font-family:Brandon grotesque; text-align:right; font-size:1.33rem;}
+
+li { font-size:100%; display:inline; padding-left:2.5rem; }
+
+.head a {text-decoration:none; color:black; opacity:0.4;}
+
+.head a:hover {text-decoration:none; color:black;font-weight: normal; opacity:0.9;transition: 0.4s;}
+
+.body {width:100%; height:100%;position:absolute;}
+
+.one {position: absolute;z-index: 15;width:0; height:100%;background-color:#e4b260; font-family: brandon grotesque; font-size:2.5rem; color:white;
+	 text-align:center;overflow-x: hidden;}
+
+.two {position: absolute;z-index: 14;width:0; height:100%;background-color:#e89d42; font-family: brandon grotesque; font-size:2.5rem; color:white;
+	 text-align:center;margin-left: 33.33%;overflow-x: hidden;}
+
+.three {position: absolute;z-index: 13;width:0; height:100%;background-color:#c0872b; font-family: brandon grotesque; font-size:2.5rem; color:white;
+	   text-align:center;margin-left: 66.66%;overflow-x: hidden;}
+
+.name {opacity: 0;position: relative;z-index: 20;margin-top: 46rem;}
+
+.one:hover {opacity:0.7;}
+
+.two:hover {opacity:0.7;}
+
+.three:hover {opacity:0.7;}
+
+.image{height:100%;position: absolute;z-index: 18;left:0;}
+
+.heading {position: absolute; font-family: 'Average', serif; font-size: 8rem; color:#2b2b2b; left:40%; top:20%  opacity: 0;display: none;}
+
+.text {diplay:none; opacity: 0;}
+
+.fa{position: absolute;z-index: 70;opacity: 0; top:4rem;right:11rem;color:black;}
+
+.fa:hover {cursor:pointer;}

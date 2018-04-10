@@ -1,0 +1,270 @@
+<html>
+<head>
+	<link rel="stylesheet" href="games.css">
+	<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+		$(document).ready(function(){
+		$(".box").animate({
+			width:'30%'
+		},800);
+
+		setTimeout(function(){
+			$("#img2, #img3, #img4, #img5").css({'display':'none'},10);
+			$(".gamesimg").animate({
+				left:'15.5rem',
+				opacity:'1.0'
+			},400);
+		},400);
+		setTimeout(function(){
+		$("#text1").animate({
+			left:'56rem',
+			opacity:'1.0'
+		},600);
+	},300);
+
+				setTimeout(function(){
+					$(".number, .vl1, .vl2").animate({
+						opacity:'1.0'
+					},400);
+				},800);
+
+			$(".readmore").click(function(){
+				$(".box").animate({
+			     width:'100%'
+				 }, 500 );
+
+				 $(".body").animate(
+ 					{display : 'none'
+ 				});
+
+				$(".gamesimg").animate(
+					{left : '-15rem'
+				});
+
+				$(".text").animate(
+				 {opacity : '0.0'
+			 });
+
+				$(".dot, .vl1, .vl2").animate(
+					{opacity:'0'
+				}).hide();
+
+				$(".head").animate(
+					{opacity:'0'
+				}).hide();
+
+				$(".readmore").hide();
+
+				 setTimeout(function(){
+		 				$(".box").animate({
+		 			     width:'70%',
+							 left:'30%'
+		 				 }, 400 );
+
+						 setTimeout(function(){
+							 $(".rules").show().animate({
+									opacity:'1.0',
+									top:'10rem'
+								}, 800 );
+
+								setTimeout(function(){
+
+								$(".rulestext").show().animate({
+									opacity:'1.0',
+									top:'20rem'
+								},800);
+
+									setTimeout(function(){
+
+									$(".fa").show().animate({
+	 									opacity:'1.0'
+	 								}, 500 );
+
+								},600);
+							},200);
+						},400);
+				 });
+			});
+		});
+$(document).ready(function(){
+			$(".fa").click(function(){
+				$(".rules").animate({
+					 opacity:'0.0',
+					 top:'18rem'
+				 },400).hide();
+
+				 $(".rulestext").animate({
+ 					opacity:'0.0',
+ 					top:'25rem'
+ 				},400).hide();
+
+				$(".box").animate({
+					width:'30%',
+					left:'0'
+				});
+
+				$(".gamesimg").animate({
+					left:'15.5rem'
+				});
+
+				$(".dot, .vl1, .vl2").show().animate(
+					{opacity:'0.7'
+				});
+
+				$(".head").show().animate(
+					{opacity:'1.0'
+				});
+
+				$(".fa").hide();
+				$(".readmore").show();
+
+				setTimeout(function(){
+				$("#text2").animate(
+					{opacity:'1.0',
+					top:'14rem'
+				},400);
+			},300);
+			});
+		});
+
+		$(document).ready(function(){
+				$('#1').click(function(){
+					$('#img1').css({'display':'none',opacity:'0.0'});
+					$('.gamesimg').animate({
+						opacity:'0.0',
+						left:'5rem'
+					}).hide();
+					$('.gamesimg').show();
+					$('#img1').animate({
+						opacity:'1.0',
+						left:'15.5rem'
+					});
+					$('.box').css({'background-color':'#b4373d'},800);
+
+					$('.text').animate({
+						opacity:'0.0'
+					},400);
+					setTimeout(function(){
+						$('#text1').animate({
+							opacity:'1.0',
+							left:'56rem'
+						},400);
+					},400);
+
+				});
+				$('#2').click(function(){
+					$('#img2, #img3, #img4, #img5 ').css({'display':'none',opacity:'0.0'});
+					$('.gamesimg').animate({
+						opacity:'0.0',
+						left:'5rem'
+					}).hide();
+					$('.gamesimg').show();
+					$('#img2').animate({
+						opacity:'1.0',
+						left:'15.5rem'
+					});
+					$('.box').css({'background-color':'#eecd76'},800);
+					$('.text').animate({
+						opacity:'0.0'
+					},400);
+					setTimeout(function(){
+						$('#text2').animate({
+							opacity:'1.0',
+							left:'56rem'
+						},400);
+					},400);
+				});
+				$('#3').click(function(){
+					$('#img3').css({'display':'none',opacity:'0.0'});
+					$('.gamesimg').animate({
+						opacity:'0.0',
+						left:'5rem'
+					}).hide();
+					$('.gamesimg').show();
+					$('#img3').animate({
+						opacity:'1.0',
+						left:'15.5rem'
+					});
+				});
+				$('#4').click(function(){
+					$('#img4').css({'display':'none',opacity:'0.0'});
+					$('.gamesimg').animate({
+						opacity:'0.0',
+						left:'5rem'
+					}).hide();
+					$('.gamesimg').show();
+					$('#img4').animate({
+						opacity:'1.0',
+						left:'15.5rem'
+					});
+				});
+				$('#5').click(function(){
+					$('#img5').css({'display':'none',opacity:'0.0'});
+					$('.gamesimg').animate({
+						opacity:'0.0',
+						left:'5rem'
+					}).hide();
+					$('.gamesimg').show();
+					$('#img5').animate({
+						opacity:'1.0',
+						left:'15.5rem'
+					});
+				});
+		});
+
+</script>
+</head>
+<body>
+<div class="header">
+	<a href="landingnew.htm"><img src="sclogo.png" class="logo"></img></a>
+	<ul class="head">
+		<li> <a href="landingnew.htm">Home </a></li>
+		<li> <a href="games.htm" style="font-weight:normal; opacity:0.90;">Games </a> </li>
+		<li> <a href="events.htm">Events </a></li>
+		<li> <a href="about_us.htm">About Us </a></li>
+		<li> <a href="notices.htm">Notices </a></li>
+		<li> <a href="team.htm">Team </a></li>
+	</ul>
+</div>
+<i class="fa fa-times" style="font-size:24px"></i>
+<div class="box"></div>
+<div class="body">
+	<img src="carrom.png" class="gamesimg" id="img1"></img>
+	<img src="chess.png" class="gamesimg" id="img2"></img>
+	<img src="foosball.png" class="gamesimg" id="img3"></img>
+	<img src="billiards.png" class="gamesimg" id="img4"></img>
+	<img src="tt.png" class="gamesimg" id="img5"></img>
+	<div class="text" id="text1">
+	<p class="game"> CARROM </p>
+	<p class="gametext">
+	Carrom is a "strike-and-pocket" tabletop game where the objective of play is to use a striker disk with a flick of the finger to make contact with and move lighter object disks called carrom men, which are thus propelled into one of four corner pockets. </p>
+	<span class="readmore" style="padding: 0.75rem 1.8rem;"> BOOK TABLE </span>
+	<span class="readmore" style="margin-left:3rem;">RULES</span>
+	</div>
+	<div class="text" id="text2">
+	<p class="game" style="color:#eecd76"> CHESS </p>
+	<p class="gametext">
+	Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid. The game is played by millions of people worldwide.</p>
+	<span class="readmore" style="padding: 0.75rem 1.8rem;"> BOOK TABLE </span>
+	<span class="readmore" style="margin-left:3rem;">RULES</span>
+	</div>
+</div>
+		<div class="hid"></div>
+		<p class="rules">RULES</p>
+		<!--<div class="hidtext"></div>-->
+		<p class="rulestext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et soe ecta lones fir tastingh polore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<div class="vl1"></div>
+		<div class="vl2"></div>
+<div class="number">
+		<span class="dot" id="1"><a href="#">1</a></span>
+		<span class="dot" id="2"><a href="#">2</a></span>
+		<span class="dot" id="3"><a href="#">3</a></span>
+		<span class="dot" id="4"><a href="#">4</a></span>
+		<span class="dot" id="5"><a href="#">5</a></span>
+</div>
+</body>
+</html>
